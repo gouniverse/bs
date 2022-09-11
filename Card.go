@@ -5,5 +5,5 @@ import (
 )
 
 func Card() *hb.Tag {
-	return hb.NewUL().Class("card")
+	return hb.NewDiv().Class("card")
 }
