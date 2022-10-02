@@ -5,5 +5,5 @@ import (
 )
 
 func NavItem() *hb.Tag {
-	return hb.NewUL().Class("nav nav-tabs")
+	return hb.NewLI().Class("nav-item")
 }
