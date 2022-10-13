@@ -1,6 +1,8 @@
-# bs
+# Bootstrap (bs)
 
-Declaratve building of Bootstrap components. Built on top of the HTML Builder module
+Declaratve building of Bootstrap components. 
+
+Its an extension of the HTML Builder package: https://github.com/gouniverse/hb
 
 ## Alerts
 
