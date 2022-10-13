@@ -1,5 +1,7 @@
 # bs
 
+Declaratve building of Bootstrap components. Built on top of the HTML Builder module
+
 ## Alerts
 
 ```golang
