@@ -16,6 +16,32 @@ bs.Alert().Class("alert-success").HTML("Success text")
 bs.Alert().Class("alert-warning").HTML("Warning text")
 ```
 
+## Breadcrumbs
+
+```
+breadcrumbsPath := []bs.Breadcrumb{
+	{
+		Name: "Home",
+		URL:  "/users",
+		Icon: icons.Icon("bi-house-fill", 16, 16, "gray").ToHTML(),
+	},
+	{
+		Name: "Profile",
+		Icon: icons.Icon("bi-person-circle", 16, 16, "gray").ToHTML(),
+		URL:  "/users/profile",
+	},
+	{
+		Name: "Update details",
+		URL:  "/users/profile/update",
+	},
+}
+
+breadcrumbs := bs.Breadcrumbs(breadcrumbsPath).Style("background:#e9ecef;border-radius:10px;padding:10px;margin-bottom:10px;")
+```
+
+Result
+<img src="Breadcrumbs.png" />
+
 ## Cards
 
 ```golang
