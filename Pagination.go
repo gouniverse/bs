@@ -1,7 +1,6 @@
 package bs
 
 import (
-	"log"
 	"math"
 
 	"github.com/gouniverse/hb"
