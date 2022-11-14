@@ -18,7 +18,7 @@ bs.Alert().Class("alert-warning").HTML("Warning text")
 
 ## Breadcrumbs
 
-```
+```golang
 breadcrumbsPath := []bs.Breadcrumb{
 	{
 		Name: "Home",
