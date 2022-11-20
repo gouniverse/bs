@@ -12,6 +12,10 @@ func ModalDialog() *hb.Tag {
 	return hb.NewDiv().Class("modal-dialog")
 }
 
+func ModalContent() *hb.Tag {
+	return hb.NewDiv().Class("modal-content")
+}
+
 func ModalHeader() *hb.Tag {
 	return hb.NewDiv().Class("modal-header")
 }
