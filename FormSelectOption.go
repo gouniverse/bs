@@ -5,5 +5,5 @@ import (
 )
 
 func FormSelectOption(name string, value string) *hb.Tag {
-	return hb.NewOption().Attr("name", name).HTML(value)
+	return hb.NewOption().Attr("value", name).HTML(value)
 }
