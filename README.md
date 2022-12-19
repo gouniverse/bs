@@ -72,3 +72,25 @@ bs.NavTabs().Children([]*hb.Tag{
 	}),
 }),
 ```
+
+## Pills
+
+```golang
+bs.NavPills().Children([]*hb.Tag{
+	bs.NavItem().Children([]*hb.Tag{
+		bs.NavLink().Class("active").Children([]*hb.Tag{
+			hb.NewSpan().HTML("Overview"),
+		}),
+	}),
+	bs.NavItem().Children([]*hb.Tag{
+		bs.NavLink().Children([]*hb.Tag{
+			hb.NewSpan().HTML("Statistics"),
+		}),
+	}),
+	bs.NavItem().Children([]*hb.Tag{
+		bs.NavLink().Children([]*hb.Tag{
+			hb.NewSpan().HTML("Preview"),
+		}),
+	}),
+}),
+```
