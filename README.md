@@ -45,8 +45,30 @@ Result
 ## Cards
 
 ```golang
-card := bs.Card().ID("CardLeadsPreview").AddChildren([]*hb.Tag{
-	bs.CardHeader().Child(hb.NewHeading5().HTML("Leads Preview")),
+card := bs.Card().ID("CardPreview").AddChildren([]*hb.Tag{
+	bs.CardHeader().Child(hb.NewHeading5().HTML("Preview")),
 	bs.CardBody().Child(preview),
 })
+```
+
+## Tabs
+
+```golang
+bs.NavTabs().Children([]*hb.Tag{
+	bs.NavItem().Children([]*hb.Tag{
+		bs.NavLink().Class("active").Children([]*hb.Tag{
+			hb.NewSpan().HTML("Overview"),
+		}),
+	}),
+	bs.NavItem().Children([]*hb.Tag{
+		bs.NavLink().Children([]*hb.Tag{
+			hb.NewSpan().HTML("Statistics"),
+		}),
+	}),
+	bs.NavItem().Children([]*hb.Tag{
+		bs.NavLink().Children([]*hb.Tag{
+			hb.NewSpan().HTML("Preview"),
+		}),
+	}),
+}),
 ```
