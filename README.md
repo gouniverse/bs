@@ -1,8 +1,10 @@
-# Bootstrap (bs)
+# Bootstrap UI for Golang <a href="https://github.com/gouniverse/bs" style="float:right:"><img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" loading="lazy"></a>
 
-Declaratve building of Bootstrap components. 
+An extensive Golang library for declaratve building of Bootstrap components. 
 
 Its an extension of the HTML Builder package: https://github.com/gouniverse/hb
+
+You can find different examples below.
 
 ## Alerts
 
