@@ -5,5 +5,5 @@ import (
 )
 
 func FormCheckRadio() *hb.Tag {
-	return hb.NewInput().Class("form-check-input").Type(hb.TYPE_CHECKBOX)
+	return hb.NewInput().Class("form-check-input").Type(hb.TYPE_RADIO)
 }
