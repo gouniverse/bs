@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func CardFooter() hb.TagInterface {
+func CardFooter() *hb.Tag {
 	return hb.NewDiv().Class("card-footer")
 }

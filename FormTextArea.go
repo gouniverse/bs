@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func FormTextArea() hb.TagInterface {
+func FormTextArea() *hb.Tag {
 	return hb.TextArea().Class("form-control")
 }

@@ -11,7 +11,7 @@ type Breadcrumb struct {
 	Icon  string
 }
 
-func Breadcrumbs(breadcrumbs []Breadcrumb) hb.TagInterface {
+func Breadcrumbs(breadcrumbs []Breadcrumb) *hb.Tag {
 	ul := hb.OL().Class("breadcrumb").Style("margin: 0px;")
 
 	for index, breadcrumb := range breadcrumbs {

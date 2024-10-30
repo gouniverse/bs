@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func ButtonLink() hb.TagInterface {
+func ButtonLink() *hb.Tag {
 	return hb.Hyperlink().Class("btn")
 }

@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func InputGroupText() hb.TagInterface {
+func InputGroupText() *hb.Tag {
 	return hb.Span().Class("input-group-text")
 }

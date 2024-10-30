@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func FormInputPlaintext() hb.TagInterface {
+func FormInputPlaintext() *hb.Tag {
 	return hb.Input().Class("form-control-plaintext")
 }

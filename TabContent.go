@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func TabContent() hb.TagInterface {
+func TabContent() *hb.Tag {
 	return hb.Div().Class("tab-content")
 }

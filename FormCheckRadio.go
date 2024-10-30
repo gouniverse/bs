@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func FormCheckRadio() hb.TagInterface {
+func FormCheckRadio() *hb.Tag {
 	return hb.Input().Class("form-check-input").Type(hb.TYPE_RADIO)
 }
