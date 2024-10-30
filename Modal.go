@@ -4,26 +4,26 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func Modal() *hb.Tag {
-	return hb.NewDiv().Class("modal")
+func Modal() hb.TagInterface {
+	return hb.Div().Class("modal")
 }
 
-func ModalDialog() *hb.Tag {
-	return hb.NewDiv().Class("modal-dialog")
+func ModalDialog() hb.TagInterface {
+	return hb.Div().Class("modal-dialog")
 }
 
-func ModalContent() *hb.Tag {
-	return hb.NewDiv().Class("modal-content")
+func ModalContent() hb.TagInterface {
+	return hb.Div().Class("modal-content")
 }
 
-func ModalHeader() *hb.Tag {
-	return hb.NewDiv().Class("modal-header")
+func ModalHeader() hb.TagInterface {
+	return hb.Div().Class("modal-header")
 }
 
-func ModalBody() *hb.Tag {
-	return hb.NewDiv().Class("modal-body")
+func ModalBody() hb.TagInterface {
+	return hb.Div().Class("modal-body")
 }
 
-func ModalFooter() *hb.Tag {
-	return hb.NewDiv().Class("modal-footer")
+func ModalFooter() hb.TagInterface {
+	return hb.Div().Class("modal-footer")
 }

@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func Alert() *hb.Tag {
-	return hb.NewDiv().Class("alert")
+func Alert() hb.TagInterface {
+	return hb.Div().Class("alert")
 }

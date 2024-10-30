@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func NavItem() *hb.Tag {
-	return hb.NewLI().Class("nav-item")
+func NavItem() hb.TagInterface {
+	return hb.LI().Class("nav-item")
 }

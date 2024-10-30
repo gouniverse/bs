@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func TabPane() *hb.Tag {
-	return hb.NewDiv().Class("tab-pane")
+func TabPane() hb.TagInterface {
+	return hb.Div().Class("tab-pane")
 }

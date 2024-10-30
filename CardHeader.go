@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func CardHeader() *hb.Tag {
-	return hb.NewDiv().Class("card-header")
+func CardHeader() hb.TagInterface {
+	return hb.Div().Class("card-header")
 }

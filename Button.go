@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func Button() *hb.Tag {
-	return hb.NewButton().Class("btn")
+func Button() hb.TagInterface {
+	return hb.Button().Class("btn")
 }

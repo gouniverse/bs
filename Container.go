@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func Container() *hb.Tag {
-	return hb.NewDiv().Class("container")
+func Container() hb.TagInterface {
+	return hb.Div().Class("container")
 }

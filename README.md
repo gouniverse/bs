@@ -47,7 +47,7 @@ Result
 ## Cards
 
 ```golang
-card := bs.Card().ID("CardPreview").AddChildren([]*hb.Tag{
+card := bs.Card().ID("CardPreview").AddChildren([]hb.TagInterface{
 	bs.CardHeader().Child(hb.NewHeading5().HTML("Preview")),
 	bs.CardBody().Child(preview),
 })
@@ -56,19 +56,19 @@ card := bs.Card().ID("CardPreview").AddChildren([]*hb.Tag{
 ## Tabs
 
 ```golang
-bs.NavTabs().Children([]*hb.Tag{
-	bs.NavItem().Children([]*hb.Tag{
-		bs.NavLink().Class("active").Children([]*hb.Tag{
+bs.NavTabs().Children([]hb.TagInterface{
+	bs.NavItem().Children([]hb.TagInterface{
+		bs.NavLink().Class("active").Children([]hb.TagInterface{
 			hb.NewSpan().HTML("Overview"),
 		}),
 	}),
-	bs.NavItem().Children([]*hb.Tag{
-		bs.NavLink().Children([]*hb.Tag{
+	bs.NavItem().Children([]hb.TagInterface{
+		bs.NavLink().Children([]hb.TagInterface{
 			hb.NewSpan().HTML("Statistics"),
 		}),
 	}),
-	bs.NavItem().Children([]*hb.Tag{
-		bs.NavLink().Children([]*hb.Tag{
+	bs.NavItem().Children([]hb.TagInterface{
+		bs.NavLink().Children([]hb.TagInterface{
 			hb.NewSpan().HTML("Preview"),
 		}),
 	}),
@@ -78,19 +78,19 @@ bs.NavTabs().Children([]*hb.Tag{
 ## Pills
 
 ```golang
-bs.NavPills().Children([]*hb.Tag{
-	bs.NavItem().Children([]*hb.Tag{
-		bs.NavLink().Class("active").Children([]*hb.Tag{
+bs.NavPills().Children([]hb.TagInterface{
+	bs.NavItem().Children([]hb.TagInterface{
+		bs.NavLink().Class("active").Children([]hb.TagInterface{
 			hb.NewSpan().HTML("Overview"),
 		}),
 	}),
-	bs.NavItem().Children([]*hb.Tag{
-		bs.NavLink().Children([]*hb.Tag{
+	bs.NavItem().Children([]hb.TagInterface{
+		bs.NavLink().Children([]hb.TagInterface{
 			hb.NewSpan().HTML("Statistics"),
 		}),
 	}),
-	bs.NavItem().Children([]*hb.Tag{
-		bs.NavLink().Children([]*hb.Tag{
+	bs.NavItem().Children([]hb.TagInterface{
+		bs.NavLink().Children([]hb.TagInterface{
 			hb.NewSpan().HTML("Preview"),
 		}),
 	}),

@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func InputGroup() *hb.Tag {
-	return hb.NewDiv().Class("input-group")
+func InputGroup() hb.TagInterface {
+	return hb.Div().Class("input-group")
 }

@@ -5,6 +5,6 @@ import (
 	"github.com/gouniverse/utils"
 )
 
-func Column(width int) *hb.Tag {
-	return hb.NewDiv().Class("col-sm-" + utils.ToString(width))
+func Column(width int) hb.TagInterface {
+	return hb.Div().Class("col-sm-" + utils.ToString(width))
 }

@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func NavLink() *hb.Tag {
-	return hb.NewHyperlink().Class("nav-link")
+func NavLink() hb.TagInterface {
+	return hb.Hyperlink().Class("nav-link")
 }

@@ -11,15 +11,15 @@ type Breadcrumb struct {
 	Icon  string
 }
 
-func Breadcrumbs(breadcrumbs []Breadcrumb) *hb.Tag {
-	ul := hb.NewOL().Class("breadcrumb").Style("margin: 0px;")
+func Breadcrumbs(breadcrumbs []Breadcrumb) hb.TagInterface {
+	ul := hb.OL().Class("breadcrumb").Style("margin: 0px;")
 
 	for index, breadcrumb := range breadcrumbs {
-		content := hb.NewSpan().HTML(breadcrumb.Name)
+		content := hb.Span().HTML(breadcrumb.Name)
 		if breadcrumb.URL != "" {
-			content = hb.NewHyperlink().Attr("href", breadcrumb.URL)
+			content = hb.Hyperlink().Href(breadcrumb.URL)
 			if breadcrumb.Icon != "" {
-				content.Child(hb.NewSpan().Style("margin-right:4px;").HTML(breadcrumb.Icon))
+				content.Child(hb.Span().Style("margin-right:4px;").HTML(breadcrumb.Icon))
 			}
 			content.HTML(breadcrumb.Name)
 		}
@@ -29,7 +29,10 @@ func Breadcrumbs(breadcrumbs []Breadcrumb) *hb.Tag {
 			active = "active"
 		}
 
-		li := hb.NewLI().Class("breadcrumb-item").Class(active).Child(content)
+		li := hb.LI().
+			Class("breadcrumb-item").
+			Class(active).
+			Child(content)
 		ul.Child(li)
 	}
 

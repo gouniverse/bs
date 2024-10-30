@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func FormCheck() *hb.Tag {
-	return hb.NewDiv().Class("form-check")
+func FormCheck() hb.TagInterface {
+	return hb.Div().Class("form-check")
 }

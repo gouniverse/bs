@@ -23,12 +23,12 @@ func Pagination(options PaginationOptions) string {
 		return ""
 	}
 
-	liStart := hb.NewLI().Class("page-item").Children([]hb.TagInterface{
-		hb.NewHyperlink().Class("page-link").Style("cursor:pointer;").Attr("href", options.URL+utils.ToString(previousPageNumber)).HTML("&laquo;"),
+	liStart := hb.LI().Class("page-item").Children([]hb.TagInterface{
+		hb.Hyperlink().Class("page-link").Style("cursor:pointer;").Attr("href", options.URL+utils.ToString(previousPageNumber)).HTML("&laquo;"),
 	})
 
-	liEnd := hb.NewLI().Class("page-item").Children([]hb.TagInterface{
-		hb.NewHyperlink().Class("page-link").Style("cursor:pointer;").Attr("href", options.URL+utils.ToString(nextPageNumber)).HTML("&raquo;"),
+	liEnd := hb.LI().Class("page-item").Children([]hb.TagInterface{
+		hb.Hyperlink().Class("page-link").Style("cursor:pointer;").Attr("href", options.URL+utils.ToString(nextPageNumber)).HTML("&raquo;"),
 	})
 
 	pages := []hb.TagInterface{}
@@ -43,8 +43,8 @@ func Pagination(options PaginationOptions) string {
 			active = " active"
 		}
 
-		li := hb.NewLI().Class("page-item" + active).Children([]hb.TagInterface{
-			hb.NewHyperlink().Class("page-link").Style("cursor:pointer;").Attr("href", options.URL+utils.ToString(i)).HTML(utils.ToString(i + 1)),
+		li := hb.LI().Class("page-item" + active).Children([]hb.TagInterface{
+			hb.Hyperlink().Class("page-link").Style("cursor:pointer;").Attr("href", options.URL+utils.ToString(i)).HTML(utils.ToString(i + 1)),
 		})
 
 		pages = append(pages, li)
@@ -54,8 +54,8 @@ func Pagination(options PaginationOptions) string {
 		pages = append(pages, liEnd)
 	}
 
-	nav := hb.NewNav().Children([]hb.TagInterface{
-		hb.NewUL().Class("pagination").Children(pages),
+	nav := hb.Nav().Children([]hb.TagInterface{
+		hb.UL().Class("pagination").Children(pages),
 	})
 
 	return nav.ToHTML()

@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func FormSelect() *hb.Tag {
-	return hb.NewSelect().Class("form-select")
+func FormSelect() hb.TagInterface {
+	return hb.Select().Class("form-select")
 }

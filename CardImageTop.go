@@ -4,6 +4,6 @@ import (
 	"github.com/gouniverse/hb"
 )
 
-func CardImageTop() *hb.Tag {
-	return hb.NewImage().Class("card-image-top")
+func CardImageTop(src string) hb.TagInterface {
+	return hb.Image(src).Class("card-image-top")
 }
